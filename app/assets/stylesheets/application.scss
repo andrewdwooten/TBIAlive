@@ -1,15 +1,30 @@
 @import "materialize";
+$tbi-blue: #5497C4;
+$tbi-green: #6ABD45;
 
+@mixin navbar-text() {
+  font-size: 14pt;
+  font-weight: bold;
+  font-family: sans-serif;
+}
 .nav-wrapper{
-  background-color: #5497C4;
+  background-color: $tbi-blue;
   height:73px !important;
 }
+.navbar-link{
+  @include navbar-text;
+  border-right: 2px solid black;
+  font-family: sans-serif;
+}
+.dropdown-content{
+  @include navbar-text
+}
 #color-bar{
-  background-color: #6ABD45;
+  background-color: $tbi-green;
   width: 100%;
   height: 80px;
   margin-top: 6px;
 }
 body{
-  background-color: blue;
+  background-color: $tbi-blue;
 }
