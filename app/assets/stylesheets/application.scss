@@ -1,1 +1,11 @@
 @import "materialize";
+
+#logo_box{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+#tbi_landing_logo{
+  width: 25%;
+  height: 100px;
+}
