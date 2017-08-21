@@ -7,9 +7,13 @@ feature 'user visits landing page' do
   end
   scenario 'and they see the tbi_alive_logo' do
     visit '/'
-    within '#logo_box' do
-      expect(page).to have_selector('#tbi_landing_logo')
-      page.find('#tbi_landing_logo')['src'].should have_content 'tbi_logo.png'
+    within '.navbar' do
+      expect(page).to have_selector('#tbi-navbar-logo')
+      page.find('#tbi-navbar-logo')['src'].should have_content 'tbi_logo.png'
     end
+  end
+  scenario 'and they see the navbar' do
+    visit '/'
+    expect(page).to have_selector('.navbar')
   end
 end
