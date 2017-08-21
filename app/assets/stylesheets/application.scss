@@ -16,14 +16,27 @@ $tbi-green: #6ABD45;
   border-right: 2px solid black;
   font-family: sans-serif;
 }
-.dropdown-content{
-  @include navbar-text
+.dropdown-content>li>a{
+  @include navbar-text;
+  color: $tbi-blue !important;
 }
 #color-bar{
   background-color: $tbi-green;
   width: 100%;
   height: 80px;
   margin-top: 6px;
+}
+#login-link{
+  @include navbar-text;  
+  font-size: 18pt;
+  color: white;
+  margin-top: 25px;
+  margin-right: 10px;
+  height: 40px;
+  width: 80px;
+}
+#login-link:hover{
+  background-color: $tbi-blue;
 }
 body{
   background-color: $tbi-blue;
