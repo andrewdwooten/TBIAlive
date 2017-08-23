@@ -1,6 +1,6 @@
 @import "materialize";
 $tbi-blue: #5497C4;
-$tbi-green: #6ABD45;
+$tbi-green: #6ABD40;
 
 @mixin navbar-text() {
   font-size: 14pt;
@@ -30,14 +30,22 @@ $tbi-green: #6ABD45;
   @include navbar-text;  
   font-size: 18pt;
   color: white;
-  margin-top: 25px;
-  margin-right: 10px;
-  height: 40px;
-  width: 80px;
-}
-#login-link:hover{
   background-color: $tbi-blue;
+  margin-right: 10px;
+  margin-top: 4px;
+  height: 75px;
+  width: 80px;
+  border: 2px solid white;
+}
+#philosophy-card{
+  border: 5px solid $tbi-green;
+  font-size: 13pt;
+  font-family: serif;
+  font-weight: 600;
 }
 body{
   background-color: $tbi-blue;
+}
+strong{
+  text-decoration: underline;
 }
