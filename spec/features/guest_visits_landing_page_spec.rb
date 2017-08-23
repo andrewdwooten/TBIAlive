@@ -21,6 +21,9 @@ feature 'user visits landing page' do
   end
   scenario 'and they see the philosophy card' do
     
-    expect(page).to have_content('#philosophy-card')
+    expect(page).to have_selector('#philosophy-card')
+    within('#philosophy-card') do
+      expect(page).to have_content('Our Philosophy')
+    end
   end
 end
